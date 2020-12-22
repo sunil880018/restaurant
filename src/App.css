@@ -458,4 +458,7 @@ header{
   .footer{
     margin-top: 1rem;
   }
+  .product {
+    width: 90%;
+  }
 }
