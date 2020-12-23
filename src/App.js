@@ -13,7 +13,7 @@ function App() {
   return (
     <>
       <Banner/>
-
+     
       <Switch>
       <Route exact path="/restaurant/" component={FoodItemList}/>
       <Route exact path="/login/" component={Login}/>
