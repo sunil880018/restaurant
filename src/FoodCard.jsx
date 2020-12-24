@@ -18,7 +18,7 @@ export default function FoodCard(props) {
                     <img src={process.env.PUBLIC_URL + val.image} alt=""/>
                      <p>{val.para}</p>
                      <div className="price">
-                         <div style= {{fontWeight:"bold"}}>&#8377; {val.price}</div>
+                         <div style= {{fontWeight:"bold",fontSize:"1.2rem"}}>&#8377; {val.price}</div>
                          <div><ShoppingCartIcon/></div>
                      </div>
                      <div className="rating">

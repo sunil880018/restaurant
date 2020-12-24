@@ -40,7 +40,9 @@ header{
 .menu_list a:hover{
   color: #fc8019;
 }
-
+.menu_list .active{
+  color:#fc8019;
+}
 .menu_list a .MuiSvgIcon-root{
   font-size: 2.5rem;
 }
@@ -372,6 +374,18 @@ header{
   border-radius: 3px;
   font-size: 1rem;
   margin-bottom: 1rem;
+}
+
+.review{
+  margin-top: 2rem;
+}
+.addreview input {
+    height: 40px;
+    font-size: 1rem;
+    outline: none;
+    border: 1px solid #ccc;
+    padding: 0 10px;
+    border-radius: 3px;
 }
 
 /* Address Form */

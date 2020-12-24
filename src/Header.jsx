@@ -3,7 +3,21 @@ import { Link } from 'react-router-dom';
 import RoomIcon from '@material-ui/icons/Room';
 import ShoppingCartIcon from '@material-ui/icons/ShoppingCart';
 export default function Header() {
-   
+   const home = () =>{
+      document.getElementById("home").style.color="#fc8019";
+      document.getElementById("login").style.color="#fff";
+      document.getElementById("aboutus").style.color="#fff";
+   }
+   const login = () =>{
+      document.getElementById("home").style.color="#fff";
+      document.getElementById("login").style.color="#fc8019";
+      document.getElementById("aboutus").style.color="#fff";
+   }
+   const About = () =>{
+      document.getElementById("home").style.color="#fff";
+      document.getElementById("login").style.color="#fff";
+      document.getElementById("aboutus").style.color="#fc8019";
+   }
     return (
         <header>
             <div className="menus">
@@ -12,13 +26,13 @@ export default function Header() {
                   <Link to="/restaurant/"><RoomIcon className="logo"/></Link>
                </div>
                <div className="menu_list">
-                  <Link to="/restaurant/" className="home_active">Home</Link>
+                  <Link to="/restaurant/" id="home" onClick={home} className="active">Home</Link>
                </div>
                <div className="menu_list">
-                  <Link to="/login/">Login</Link>
+                  <Link to="/login/" id="login" onClick={login}>Login</Link>
                </div>
                <div className="menu_list">
-                  <Link to="/aboutus">About Us</Link>
+                  <Link to="/aboutus" id="aboutus" onClick={About}>About Us</Link>
                </div>
                </div>
             <div className="search_items">
